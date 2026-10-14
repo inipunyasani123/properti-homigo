@@ -2,7 +2,7 @@
 
 Marketplace untuk pembeli dan penyewa pertama: rumah terjangkau, apartemen, kost, dan gudang. Gaya aplikasi biru dengan Space Grotesk.
 
-**Demo live:** https://properti-homigo.vercel.app
+**Demo live:** https://properti-homigo.pintuweb.id
 
 ![Tangkapan layar Homigo](public/og.jpg)
 

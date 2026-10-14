@@ -6,10 +6,10 @@ import Footer from "@/components/Footer";
 const grotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-grotesk", weight: ["500", "600", "700"], display: "swap" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
-const __jsonld = {"@context":"https://schema.org","@type":"RealEstateAgent","name":"Homigo","description":"Cari rumah pertama, apartemen, dan kost, lalu bandingkan berdampingan: harga per meter persegi, estimasi cicilan KPR, dan sewa yang disetarakan per bulan.","url":"https://properti-homigo.vercel.app","areaServed":"ID"};
+const __jsonld = {"@context":"https://schema.org","@type":"RealEstateAgent","name":"Homigo","description":"Cari rumah pertama, apartemen, dan kost, lalu bandingkan berdampingan: harga per meter persegi, estimasi cicilan KPR, dan sewa yang disetarakan per bulan.","url":"https://properti-homigo.pintuweb.id","areaServed":"ID"};
 
 export const metadata = {
-  metadataBase: new URL("https://properti-homigo.vercel.app"),
+  metadataBase: new URL("https://properti-homigo.pintuweb.id"),
   title: { default: "Homigo — Rumah pertama & tempat sewa", template: "%s — Homigo" },
   description: "Cari rumah pertama, apartemen, dan kost, lalu bandingkan berdampingan: harga per meter persegi, estimasi cicilan KPR, dan sewa yang disetarakan per bulan.",
   applicationName: "Homigo",
@@ -17,11 +17,11 @@ export const metadata = {
   authors: [{ name: "Homigo" }],
   creator: "Homigo",
   publisher: "Homigo",
-  alternates: { canonical: "https://properti-homigo.vercel.app" },
+  alternates: { canonical: "https://properti-homigo.pintuweb.id" },
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://properti-homigo.vercel.app",
+    url: "https://properti-homigo.pintuweb.id",
     siteName: "Homigo",
     title: "Homigo — Rumah pertama & tempat sewa",
     description: "Cari rumah pertama, apartemen, dan kost, lalu bandingkan berdampingan: harga per meter persegi, estimasi cicilan KPR, dan sewa yang disetarakan per bulan.",
