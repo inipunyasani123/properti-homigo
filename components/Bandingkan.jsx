@@ -2,7 +2,6 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
 import { Plus, X, Trophy } from 'lucide-react';
 import { properti, formatHarga, hargaLabel, sewaPerBulan, cicilanBulanan } from '@/lib/data';
 
@@ -49,15 +48,16 @@ function terbaikDari(b, list) {
 }
 
 export default function Bandingkan() {
-  const sp = useSearchParams();
-  const [ids, setIds] = useState([]);
+  const [ids, setIds] = useState([1, 2]);
   const [dp, setDp] = useState(20);
   const [tenor, setTenor] = useState(15);
   const [bunga, setBunga] = useState(7.5);
 
   // Baca ?id= sekali saat dibuka; satu id dilengkapi listing serupa.
+  // Tanpa ?id= tampil dua listing pertama, sudah dirender di server.
   useEffect(() => {
-    const awal = (sp.get('id') || '').split(',').map(Number).filter(ambil).slice(0, MAKS);
+    const awal = (new URLSearchParams(window.location.search).get('id') || '').split(',').map(Number).filter(ambil).slice(0, MAKS);
+    if (!awal.length) return;
     if (awal.length === 1) {
       const a = ambil(awal[0]);
       const b = properti.find((p) => p.id !== a.id && p.status === a.status && p.jenisProperti === a.jenisProperti) || properti.find((p) => p.id !== a.id && p.status === a.status);
@@ -134,7 +134,7 @@ export default function Bandingkan() {
                       ))}
                     </select>
                   </label>
-                  <Link href={`/properti/${p.id}`} className="mt-2 inline-block text-xs font-semibold text-forest underline-offset-4 hover:underline">Lihat detail</Link>
+                  <Link href={`/properti/${p.id}`} className="mt-1 inline-block py-1.5 text-xs font-semibold text-forest underline-offset-4 hover:underline">Lihat detail</Link>
                 </th>
               ))}
             </tr>

@@ -31,23 +31,23 @@ export default function HomePage() {
   return (
     <main className="relative z-10">
       {/* Hero — app/proptech */}
-      <section className="px-4 pt-12 pb-10 sm:px-6 lg:px-8">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+      <section className="px-4 pt-8 pb-10 sm:px-6 md:pt-12 lg:px-8">
+        <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
           <div>
             <span className="inline-flex items-center gap-2 rounded-full bg-forest/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-forest">
               <Sparkles size={14} /> Untuk pembeli & penyewa pertama
             </span>
-            <h1 className="mt-6 font-display text-5xl font-bold leading-[1.02] text-ink md:text-7xl">
+            <h1 className="mt-5 font-display text-[2.75rem] font-bold leading-[1.02] text-ink sm:text-5xl md:mt-6 md:text-7xl">
               Cari rumah, <span className="text-forest">semudah</span> geser layar.
             </h1>
-            <p className="mt-5 max-w-md text-lg text-muted">
+            <p className="mt-4 max-w-md text-base text-muted sm:text-lg md:mt-5">
               Rumah, apartemen, dan kost dengan harga per m², estimasi cicilan, dan sewa yang disetarakan per bulan — lalu bandingkan berdampingan.
             </p>
-            <div className="mt-8"><HeroSearch /></div>
+            <div className="mt-6 md:mt-8"><HeroSearch /></div>
             <div className="mt-5 flex flex-wrap items-center gap-2 text-sm">
               <span className="flex items-center gap-1 text-muted"><TrendingUp size={15} /> Populer:</span>
               {TRENDING.map((t) => (
-                <Link key={t.l} href={t.href} className="rounded-full border border-black/10 bg-white px-3 py-1 text-xs font-medium text-ink transition hover:border-forest hover:text-forest">{t.l}</Link>
+                <Link key={t.l} href={t.href} className="inline-flex min-h-8 items-center rounded-full border border-black/10 bg-white px-3 py-1 text-[13px] font-medium text-ink transition hover:border-forest hover:text-forest">{t.l}</Link>
               ))}
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function HomePage() {
           {/* Bento image collage */}
           <div className="relative">
             <div className="grid grid-cols-2 gap-3">
-              <div className="relative col-span-1 row-span-2 aspect-[3/4] overflow-hidden rounded-3xl">
+              <div className="relative col-span-1 row-span-2 aspect-[4/5] overflow-hidden rounded-3xl sm:aspect-[3/4]">
                 <Image src="/images/properti/rumah-kotak.webp" alt="" fill priority sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
               </div>
               <div className="relative aspect-square overflow-hidden rounded-3xl">
@@ -78,7 +78,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 rounded-[1.75rem] bg-forest p-6 text-white md:grid-cols-4 md:p-8">
           {stats.map((s) => (
             <div key={s.label} className="text-center">
-              <p className="font-display text-3xl font-bold md:text-4xl">{s.value}</p>
+              <p className="font-display text-2xl font-bold sm:text-3xl md:text-4xl">{s.value}</p>
               <p className="mt-1 text-sm text-white/90">{s.label}</p>
             </div>
           ))}
@@ -86,14 +86,14 @@ export default function HomePage() {
       </section>
 
       {/* Kategori pills */}
-      <section className="px-4 py-14 sm:px-6 lg:px-8">
+      <section className="px-4 py-10 sm:px-6 md:py-14 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <h2 className="font-display text-2xl font-bold text-ink md:text-3xl">Telusuri kategori</h2>
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-5 flex flex-wrap gap-2 sm:mt-6 sm:gap-3">
             {kategori.map((k) => {
               const Icon = ICONS[k.icon] || House;
               return (
-                <Link key={k.jenis} href={`/properti?jenis=${k.jenis}`} className="flex items-center gap-2 rounded-2xl border border-black/5 bg-white px-5 py-3 text-sm font-semibold text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-forest/30 hover:text-forest">
+                <Link key={k.jenis} href={`/properti?jenis=${k.jenis}`} className="flex items-center gap-2 rounded-2xl border border-black/5 bg-white px-4 py-2.5 text-sm font-semibold text-ink shadow-sm transition hover:-translate-y-0.5 hover:border-forest/30 hover:text-forest sm:px-5 sm:py-3">
                   <Icon size={18} className="text-forest" /> {k.jenis}
                 </Link>
               );
@@ -110,28 +110,28 @@ export default function HomePage() {
               <h2 className="font-display text-3xl font-bold text-ink md:text-4xl">Listing pilihan</h2>
               <p className="mt-2 text-muted">Pilih tab beli atau sewa.</p>
             </div>
-            <Link href="/properti" className="hidden items-center gap-1 text-sm font-semibold text-forest hover:underline sm:inline-flex">Lihat semua <ArrowUpRight size={16} /></Link>
+            <Link href="/properti" className="hidden items-center gap-1 py-2 text-sm font-semibold text-forest hover:underline sm:inline-flex">Lihat semua <ArrowUpRight size={16} /></Link>
           </div>
           <div className="mt-8"><Rekomendasi /></div>
         </div>
       </section>
 
       {/* KPR Calculator */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
+      <section className="px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl"><Reveal><KprCalculator /></Reveal></div>
       </section>
 
       {/* How it works */}
-      <section className="bg-sand/60 px-4 py-16 sm:px-6 lg:px-8">
+      <section className="bg-sand/60 px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <Reveal className="text-center"><h2 className="font-display text-3xl font-bold text-ink md:text-4xl">Saring, bandingkan, lihat</h2></Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-8 grid gap-4 md:mt-12 md:grid-cols-3 md:gap-6">
             {STEPS.map((s, i) => (
               <Reveal key={s.title} delay={i * 0.1}>
-                <div className="relative h-full rounded-3xl border border-black/5 bg-white p-8 shadow-sm">
-                  <span className="absolute right-6 top-6 font-display text-5xl font-bold numeral-outline" aria-hidden="true">0{i + 1}</span>
-                  <span className="grid h-12 w-12 place-items-center rounded-2xl bg-forest text-white"><s.icon size={22} /></span>
-                  <h3 className="mt-5 font-display text-xl font-bold text-ink">{s.title}</h3>
+                <div className="relative h-full rounded-3xl border border-black/5 bg-white p-6 shadow-sm md:p-8">
+                  <span className="absolute right-6 top-5 font-display text-4xl font-bold numeral-outline md:top-6 md:text-5xl" aria-hidden="true">0{i + 1}</span>
+                  <span className="grid h-11 w-11 place-items-center rounded-2xl bg-forest text-white md:h-12 md:w-12"><s.icon size={22} /></span>
+                  <h3 className="mt-4 font-display text-xl font-bold text-ink md:mt-5">{s.title}</h3>
                   <p className="mt-2 text-muted">{s.desc}</p>
                 </div>
               </Reveal>
@@ -141,7 +141,7 @@ export default function HomePage() {
       </section>
 
       {/* Cuplikan perbandingan */}
-      <section className="px-4 py-16 sm:px-6 lg:px-8">
+      <section className="px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <Reveal>
             <h2 className="font-display text-3xl font-bold text-ink md:text-4xl">Mana yang lebih masuk akal?</h2>
@@ -173,9 +173,9 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="px-4 pb-20 sm:px-6 lg:px-8">
+      <section className="px-4 pb-14 sm:px-6 md:pb-20 lg:px-8">
         <Reveal className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-8 overflow-hidden rounded-[2rem] bg-gradient-to-br from-forest to-forest-soft p-10 text-white md:grid-cols-2 md:p-16">
+          <div className="grid items-center gap-8 overflow-hidden rounded-[2rem] bg-gradient-to-br from-forest to-forest-soft px-6 py-10 text-white sm:p-10 md:grid-cols-2 md:p-16">
             <div>
               <h2 className="font-display text-3xl font-bold leading-tight md:text-4xl">Punya rumah atau kamar untuk disewakan?</h2>
               <p className="mt-4 text-white/90">Pasang listing tanpa biaya di muka. Kami bantu menghitung harga per m² dan sewa setaranya supaya penawaranmu mudah dibandingkan.</p>
