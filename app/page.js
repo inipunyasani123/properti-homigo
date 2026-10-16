@@ -117,12 +117,12 @@ export default function HomePage() {
       </section>
 
       {/* KPR Calculator */}
-      <section className="px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+      <section className="tunda-render px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl"><Reveal><KprCalculator /></Reveal></div>
       </section>
 
       {/* How it works */}
-      <section className="bg-sand/60 px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+      <section className="tunda-render bg-sand/60 px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <Reveal className="text-center"><h2 className="font-display text-3xl font-bold text-ink md:text-4xl">Saring, bandingkan, lihat</h2></Reveal>
           <div className="mt-8 grid gap-4 md:mt-12 md:grid-cols-3 md:gap-6">
@@ -141,7 +141,7 @@ export default function HomePage() {
       </section>
 
       {/* Cuplikan perbandingan */}
-      <section className="px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+      <section className="tunda-render px-4 py-12 sm:px-6 md:py-16 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <Reveal>
             <h2 className="font-display text-3xl font-bold text-ink md:text-4xl">Mana yang lebih masuk akal?</h2>
@@ -173,7 +173,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="px-4 pb-14 sm:px-6 md:pb-20 lg:px-8">
+      <section className="tunda-render px-4 pb-14 sm:px-6 md:pb-20 lg:px-8">
         <Reveal className="mx-auto max-w-7xl">
           <div className="grid items-center gap-8 overflow-hidden rounded-[2rem] bg-gradient-to-br from-forest to-forest-soft px-6 py-10 text-white sm:p-10 md:grid-cols-2 md:p-16">
             <div>
