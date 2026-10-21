@@ -56,13 +56,13 @@ export default function HomePage() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-3">
               <div className="relative col-span-1 row-span-2 aspect-[4/5] overflow-hidden rounded-3xl sm:aspect-[3/4]">
-                <Image src="/images/properti/rumah-kotak.webp" alt="" fill priority sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
+                <Image src="/images/properti/rumah-satu-lantai-kuning.webp" alt="" fill priority fetchPriority="high" sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
               </div>
               <div className="relative aspect-square overflow-hidden rounded-3xl">
-                <Image src="/images/properti/kamar-kost.webp" alt="" fill sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
+                <Image src="/images/properti/kamar-kost-meja.webp" alt="" fill sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
               </div>
               <div className="relative aspect-square overflow-hidden rounded-3xl">
-                <Image src="/images/properti/apartemen-putih.webp" alt="" fill sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
+                <Image src="/images/properti/apartemen-kompleks.webp" alt="" fill sizes="(max-width:1024px) 50vw, 25vw" className="object-cover" />
               </div>
             </div>
             <div className="absolute -bottom-4 left-6 flex items-center gap-3 rounded-2xl border border-black/5 bg-white px-4 py-3 shadow-xl">
@@ -187,8 +187,8 @@ export default function HomePage() {
             <div className="relative hidden h-48 md:block">
               <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-white/10 blur-xl" aria-hidden="true" />
               <div className="absolute inset-0 grid grid-cols-2 gap-3">
-                <div className="relative overflow-hidden rounded-2xl"><Image src="/images/properti/rumah-satu-lantai.webp" alt="" fill sizes="20vw" className="object-cover" /></div>
-                <div className="relative mt-8 overflow-hidden rounded-2xl"><Image src="/images/properti/kamar-studio.webp" alt="" fill sizes="20vw" className="object-cover" /></div>
+                <div className="relative overflow-hidden rounded-2xl"><Image src="/images/properti/rumah-deret-putih.webp" alt="" fill sizes="20vw" className="object-cover" /></div>
+                <div className="relative mt-8 overflow-hidden rounded-2xl"><Image src="/images/properti/studio-apartemen.webp" alt="" fill sizes="20vw" className="object-cover" /></div>
               </div>
             </div>
           </div>
