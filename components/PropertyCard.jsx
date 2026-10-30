@@ -15,7 +15,7 @@ export default function PropertyCard({ item }) {
       <div className="p-4">
         <div className="flex items-center justify-between gap-2">
           <p className="font-display text-xl font-bold text-forest">{hargaLabel(item)}</p>
-          <span className="rounded-lg bg-sand px-2.5 py-1 text-[11px] font-semibold text-forest">{item.jenisProperti}</span>
+          <span className="rounded-lg bg-sand px-2.5 py-1 text-xs font-semibold text-forest">{item.jenisProperti}</span>
         </div>
         <h3 className="mt-2 line-clamp-1 font-semibold text-ink transition-colors group-hover:text-forest">{item.judul}</h3>
         <p className="mt-1 flex items-center gap-1 text-sm text-muted"><MapPin size={14} /> {item.lokasi.kecamatan}, {item.lokasi.kota}</p>

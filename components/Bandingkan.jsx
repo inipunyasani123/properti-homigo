@@ -83,7 +83,7 @@ export default function Bandingkan() {
   const list = ids.map(ambil);
   const rows = baris({ dp, tenor, bunga });
   const campur = new Set(list.map((p) => p.status)).size > 1;
-  const sel = 'rounded-xl border border-black/10 bg-cream px-3 py-2 text-sm text-ink outline-none transition focus:border-forest';
+  const sel = 'rounded-xl border border-black/10 bg-cream px-3 py-2 text-base text-ink sm:text-sm outline-none transition focus:border-forest';
 
   return (
     <div>

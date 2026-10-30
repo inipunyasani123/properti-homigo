@@ -22,7 +22,7 @@ export default function SearchBar() {
     router.push('/properti' + (qs ? `?${qs}` : ''));
   };
 
-  const sel = 'w-full rounded-xl border border-black/10 bg-cream px-3 py-3 text-sm text-ink outline-none transition focus:border-forest';
+  const sel = 'w-full rounded-xl border border-black/10 bg-cream px-3 py-3 text-base text-ink sm:text-sm outline-none transition focus:border-forest';
 
   return (
     <form onSubmit={submit} className="rounded-2xl border border-black/5 bg-white p-3 shadow-xl sm:p-4">
