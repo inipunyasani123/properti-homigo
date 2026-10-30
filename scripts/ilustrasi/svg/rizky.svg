@@ -45,10 +45,7 @@
       <rect x="222" y="200" width="196" height="268" fill="url(#cahaya)"/>
       <ellipse cx="320" cy="252" rx="108" ry="26" fill="#a17352" opacity=".35" filter="url(#lembut)"/>
     </g>
-  <circle cx="262" cy="388" r="26" fill="url(#pipi)"/><circle cx="378" cy="388" r="26" fill="url(#pipi)"/><path d="M 326 354 C 332 378 338 390 330 398 C 324 402 314 402 308 397" fill="none" stroke="#956b4c" stroke-width="3.5" stroke-linecap="round"/>
-    <ellipse cx="318" cy="390" rx="16" ry="9" fill="#b17f5b" opacity=".35"/><path d="M 292 424 C 306 436 334 436 348 424 C 336 446 304 446 292 424 Z" fill="#a25f4c"/>
-    <path d="M 290 423 C 306 437 334 437 350 423" fill="none" stroke="#693e31" stroke-width="3" stroke-linecap="round"/>
-    <path d="M 286 420 C 289 422 290 424 290 427 M 354 420 C 351 422 350 424 350 427" stroke="#976c4d" stroke-width="2.5" stroke-linecap="round" fill="none" opacity=".6"/><ellipse cx="278" cy="338" rx="8.5" ry="9.0" fill="#2a1c15"/><circle cx="275.5" cy="335" r="2.6" fill="#fff" opacity=".9"/><ellipse cx="362" cy="338" rx="8.5" ry="9.0" fill="#2a1c15"/><circle cx="359.5" cy="335" r="2.6" fill="#fff" opacity=".9"/><path d="M 256 312 C 270 302 288 302 302 310" fill="none" stroke="#1c1714" stroke-width="8" stroke-linecap="round"/><path d="M 384 312 C 370 302 352 302 338 310" fill="none" stroke="#1c1714" stroke-width="8" stroke-linecap="round"/>
+  
   <g>
     <path d="M 220 330 C 216 280 220 238 240 214 C 254 156 312 124 372 130 C 426 138 432 182 426 252 C 424 290 422 312 420 330 C 410 298 404 272 390 254 C 352 240 302 238 264 250 C 234 262 224 292 220 330 Z" fill="#1c1714"/>
     <path d="M 264 214 C 296 160 360 146 412 176" fill="none" stroke="#4e4a48" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
